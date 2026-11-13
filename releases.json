@@ -1,0 +1,24 @@
+{
+  "updated": "2026-11-13T12:06:07.266Z",
+  "versions": [
+    {
+      "version": "1.16.0",
+      "name": "UCMS 1.16.0",
+      "date": "2026-11-13T12:06:07.265Z",
+      "prerelease": false,
+      "notes": "**Обновления без GitHub Releases**\n- Новые версии лежат прямо в репозитории `ucms-releases`: `releases.json` (версии, описание,\n  контрольные суммы) и `releases/<версия>/` с архивами сборок. UCMS читает их по адресу\n  raw.githubusercontent.com; проверка архива — как раньше (sha256, CRC, `node --check`).\n- Выпуск версии — `node tools/make-release.js`, затем `node tools/publish-release.js <клон ucms-releases>`\n  и push; в репозитории хранятся 3 последние версии.\n- Это переходная версия: её нужно один раз выложить привычным релизом GitHub — дальше\n  обновления приходят из файлов репозитория. Старый способ (GitHub Releases) остаётся запасным.\n- Общий архив `ucms-X.Y.Z.zip` для версий до 1.12 больше не собирается.",
+      "files": {
+        "local": {
+          "file": "releases/1.16.0/ucms-local-1.16.0.zip",
+          "sha256": "7e5e5c7a8fdc8eabe968c8a1a510365cc72cec5dbe64e9d3a307a0a851732c5a",
+          "size": 527098
+        },
+        "web": {
+          "file": "releases/1.16.0/ucms-web-1.16.0.zip",
+          "sha256": "168c32905bfe37ceb2ad538a43b576ce8a982163cea54201fb3d3be13c6338bb",
+          "size": 536218
+        }
+      }
+    }
+  ]
+}
